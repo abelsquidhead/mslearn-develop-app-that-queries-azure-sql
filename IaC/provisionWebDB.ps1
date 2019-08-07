@@ -613,6 +613,14 @@ az storage account create `
 Write-Output "done creating storage account for monitoring and tuning"
 Write-Output ""
 
+# Query Resource Group
+# 
+Write-Output "querying resource group for all assets..."
+az group deployment list `
+    --resource-group $resourceGroupName
+Write-Output "done querying resource group"
+Write-Output ""
+
 # enable database audit
 #
 Write-Output "enabling auditing for db servers 1..."
