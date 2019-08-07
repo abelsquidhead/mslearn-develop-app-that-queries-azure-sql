@@ -616,7 +616,7 @@ Write-Output ""
 # Query Resource Group
 # 
 Write-Output "querying resource group for all assets..."
-az group deployment list `
+az resource list `
     --resource-group $resourceGroupName
 Write-Output "done querying resource group"
 Write-Output ""
