@@ -35,7 +35,7 @@ stages:
     - script: |
         echo "hello"
         echo "world"
-        echo ${{ resources.repositories['mslearn-develop-app-that-queries-azure-sql'].name }}
+        echo ${{ job }}
       displayName: Testing Pipeline Decorators
       
       
