@@ -32,8 +32,12 @@ stages:
       BuildPlatform: any cpu
 
     steps:
-    - script: echo "hello"
+    - script: |
+        echo "hello"
+        echo "world"
       displayName: Testing Pipeline Decorators
+      
+      
 
     - task: DotNetCoreCLI@2
       displayName: Restore
