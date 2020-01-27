@@ -173,6 +173,8 @@ stages:
                 Write-Host "Auto Generated SQL Update Script:"
                 
                 Get-Content d:\a\1\s\GeneratedOutputFiles\learndb_Script.sql | foreach {Write-Output $_}
+
+          - script: echo "hello"
               
 - stage: DeployToDev
   jobs:
