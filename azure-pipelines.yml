@@ -35,6 +35,7 @@ stages:
     - script: |
         echo "hello"
         echo "world"
+        echo {{job}}
       displayName: Testing Pipeline Decorators
       
       
